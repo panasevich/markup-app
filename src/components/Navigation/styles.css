@@ -1,0 +1,41 @@
+.navigation__wrapper {
+    padding: 10px;
+    border-right: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    overflow: auto;
+}
+.navigation__item {
+    color: blue;
+    cursor: pointer;
+}
+.navigation__item:first-child {
+    margin-left: 0;
+}
+.navigation__item-active {
+    color: red;
+    cursor: default;
+}
+.navigation__item-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.navigation__item > .navigation__item {
+    margin-left: 10px;
+}
+.navigation__icon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+.navigation__text {
+    position: relative;
+}
+.navigation__text-icon {
+    padding-left: 35px;
+    position: relative;
+}

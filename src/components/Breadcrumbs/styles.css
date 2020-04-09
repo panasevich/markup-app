@@ -1,0 +1,35 @@
+.breadcrumbs__wrapper {
+    border-bottom: 1px solid grey;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    padding: 0 10px;
+}
+.breadcrumbs__item {
+    padding-left: 10px;
+    margin-right: 10px;
+    color: blue;
+    cursor: pointer;
+    position: relative;
+}
+.breadcrumbs__item:before {
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    border-left-color: grey;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.breadcrumbs__item:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border: 0;
+}
+.breadcrumbs__item:first-child:before {
+    display: none;
+}
+.breadcrumbs__item-active {
+    color: red;
+    cursor: default;
+}

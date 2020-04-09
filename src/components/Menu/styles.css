@@ -1,0 +1,22 @@
+.menu__wrapper {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    height: 45px;
+}
+.menu__item {
+    padding-left: 10px;
+    margin-right: 10px;
+    border-left: 1px solid grey;
+    color: blue;
+    cursor: pointer;
+}
+.menu__item:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border: 0;
+}
+.menu__item-active {
+    color: red;
+    cursor: default;
+}

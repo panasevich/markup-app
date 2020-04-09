@@ -1,0 +1,22 @@
+.gallery__wrapper {
+    overflow: auto;
+    max-height: calc(100% - 36px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery__image-wrapper {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.14), 0 1px 8px 0 rgba(0,0,0,0.12);
+}
+.gallery__image {
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
